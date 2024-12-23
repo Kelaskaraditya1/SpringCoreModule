@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean class="org.example.XMLConfiguration.ConstructorInjection.CourseCertificate" name="CourseCertificate">
+        <constructor-arg value="Android Certificate"/>
+        <constructor-arg value="69" type="int"/>
+    </bean>
+    <bean class="org.example.XMLConfiguration.ConstructorInjection.Person" name="PersonConstructor">
+        <constructor-arg value="Aditya" />
+        <constructor-arg value="22" type="int"/>
+        <constructor-arg ref="CourseCertificate"/>
+        <constructor-arg name="coursesList">
+            <list>
+                <value>Android Devlopment in Java</value>
+                <value>Android Devlopment in Kotlin</value>
+                <value>Frontend using Jetpack Compose</value>
+                <value>Spring FrameWork</value>
+                <value>Spring Boot Framework</value>
+                <value>Hibernate Framework</value>
+                <value>Flutter</value>
+                <value>Cloud using Aws</value>
+                <value>Docker and Kubernetes</value>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>

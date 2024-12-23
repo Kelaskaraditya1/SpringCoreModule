@@ -1,4 +1,4 @@
-package org.example.ReferenceDependencyInjection;
+package org.example.XMLConfiguration.ReferenceDependencyInjection;
 
 public class SecondClass {
     private int y;

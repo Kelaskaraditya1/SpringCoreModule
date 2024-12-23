@@ -8,7 +8,7 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="org.example.CollectionDependencyInjection.Employee" name="Aditya">
+    <bean class="org.example.XMLConfiguration.CollectionDependencyInjection.Employee" name="Aditya">
         <property name="name" value="Aditya">
         </property>
 

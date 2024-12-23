@@ -1,4 +1,4 @@
-package org.example.PrimitiveDependencyInjection;
+package org.example.XMLConfiguration.PrimitiveDependencyInjection;
 
 
 public class Student {

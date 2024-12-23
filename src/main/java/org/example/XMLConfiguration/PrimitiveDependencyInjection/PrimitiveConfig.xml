@@ -11,7 +11,7 @@
 
 <!--    Method 1 for creating Bean -->
 
-    <bean class="org.example.PrimitiveDependencyInjection.Student" name="Aditya">
+    <bean class="org.example.XMLConfiguration.PrimitiveDependencyInjection.Student" name="Aditya">
         <property name="sid" >
             <value>2021FHCO042</value>
         </property>
@@ -31,7 +31,7 @@
 
 <!--    Method 2 for creating Bean Class , without value attribute.-->
 
-    <bean class="org.example.PrimitiveDependencyInjection.Student" name="Mayur">
+    <bean class="org.example.XMLConfiguration.PrimitiveDependencyInjection.Student" name="Mayur">
         <property name="sid" value="2021FHCO042">
         </property>
 

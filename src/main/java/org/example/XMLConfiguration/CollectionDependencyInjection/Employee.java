@@ -1,4 +1,4 @@
-package org.example.CollectionDependencyInjection;
+package org.example.XMLConfiguration.CollectionDependencyInjection;
 
 import java.util.List;
 import java.util.Map;

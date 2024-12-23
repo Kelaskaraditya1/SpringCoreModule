@@ -1,11 +1,11 @@
-package org.example.ReferenceDependencyInjection;
+package org.example.XMLConfiguration.ReferenceDependencyInjection;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ReferenceMain {
     public static void main(String[] args) {
 
-        var context = new ClassPathXmlApplicationContext("org/example/ReferenceDependencyInjection/ReferenceConfig.xml");
+        var context = new ClassPathXmlApplicationContext("org/example/XMLConfiguration/ReferenceDependencyInjection/ReferenceConfig.xml");
 
         // First Class Bean
 
