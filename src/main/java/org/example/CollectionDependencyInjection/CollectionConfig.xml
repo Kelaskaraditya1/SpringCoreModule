@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="org.example.CollectionDependencyInjection.Employee" name="Aditya">
+        <property name="name" value="Aditya">
+        </property>
+
+        <property name="phoneNo" >
+            <list>
+                <value>9819375722</value>
+                <value>8591059220</value>
+                <value>9619074548</value>
+                <value>8597898745</value>
+            </list>
+        </property>
+
+        <property name="address">
+            <set>
+                <value>Mumbai</value>
+                <value>Delhi</value>
+                <value>Pune</value>
+                <value>Kerla</value>
+                <value>Banglore</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="Java" value="2 Months"></entry>
+                <entry key="Python" value="3 Months"></entry>
+                <entry key="Android" value="4 Months"></entry>
+                <entry key="Kotlin" value="5 Months"></entry>
+                <entry key="Jetpack Compose" value="6 Months"></entry>
+                <entry key="Flutter" value="7 Months"></entry>
+            </map>
+        </property>
+
+    </bean>
+</beans>
