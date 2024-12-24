@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean class="org.example.AutoWiring.UsingXMLConfiguration.Address" name="address">
+        <property name="country" value="India"/>
+        <property name="state" value="Maharashtra"/>
+        <property name="city" value="Mumbai"/>
+    </bean>
+
+<!--    Method 1: Using byName Autowiring means it searches a bean in the configuration file with the same name as declared in the class
+        i.e the bean address is created with the name address and in the class Employee the name of the instance is also of the same name.-->
+
+<!--    <bean class="org.example.AutoWiring.UsingXMLConfiguration.Employee" name="Aditya" autowire="byName">-->
+<!--        <property name="name" value="Aditya"/>-->
+<!--        <property name="empId" value="042"/>-->
+<!--    </bean>-->
+
+<!-- Method 2: Using byType Autowiring it searches a bean in the configuration file with the same Type i.e it will search whose class is Address  but there could be ambiguity issues.-->
+
+<!--    <bean class="org.example.AutoWiring.UsingXMLConfiguration.Employee" name="Aditya" autowire="byType">-->
+<!--        <property name="name" value="Aditya"/>-->
+<!--        <property name="empId" value="042"/>-->
+<!--    </bean>-->
+
+    <!--Method 3: using Constructor  it calls parameterised constructor-->
+    <bean class="org.example.AutoWiring.UsingXMLConfiguration.Employee" name="Aditya" autowire="constructor">
+        <property name="name" value="Aditya"/>
+        <property name="empId" value="042"/>
+    </bean>
+</beans>
