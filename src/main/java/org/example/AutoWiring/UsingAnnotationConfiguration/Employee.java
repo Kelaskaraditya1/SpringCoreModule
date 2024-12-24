@@ -1,17 +1,19 @@
-package org.example.AutoWiring.UsingXMLConfiguration;
+package org.example.AutoWiring.UsingAnnotationConfiguration;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Employee {
     private String name;
     private int empId;
     private Address address;
 
-    public Employee(String name, int empId, Address address){
+    public Employee(String name,int empId,Address address){
         this.name=name;
         this.empId=empId;
         this.address=address;
     }
 
-    public Employee(String name, Address address){
+    public Employee(String name,Address address){
         this.name=name;
         this.address=address;
     }
@@ -32,6 +34,7 @@ public class Employee {
         return empId;
     }
 
+
     public void setEmpId(int empId) {
         this.empId = empId;
     }
@@ -39,7 +42,7 @@ public class Employee {
     public Address getAddress() {
         return address;
     }
-
+    @Autowired
     public void setAddress(Address address) {
         this.address = address;
     }
