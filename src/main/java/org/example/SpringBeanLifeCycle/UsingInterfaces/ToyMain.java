@@ -3,6 +3,7 @@ package org.example.SpringBeanLifeCycle.UsingInterfaces;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ToyMain {
+
     public static void main(String[] args) {
 
         // for executing Destroy using registerShutdownHook() from AbstractApplicationContext
